@@ -1,16 +1,55 @@
-body{
+
+body {
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-img {
-    width: 30%;
-    margin-left: 2.5%;
-    margin-bottom: 2.5%;
+
+.the-main-navbar {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.75rem 1.2rem;
+    background: rgb(9, 8, 10);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    font-family: "Georgia", serif;
 }
 
-img:hover {
-    opacity: 0.5;
+.nav-logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #222 !important;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    font-size: 0.97rem;
+    font-weight: 500;
+    color: #444 !important;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+    border-bottom-color: #000;
 }
 
 .site-nav {
@@ -18,105 +57,114 @@ img:hover {
     border-bottom: 2px solid #56565684;
     width: 30%;
     margin-left: 2.5%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     padding: 1rem 0;
     font-size: 1.5em;
-    
+    font-weight: bold;
 }
 
-.the-main-navbar {
-    top:0;
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5%;
     width: 100%;
-    z-index: 1000;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0.75rem 1.2rem;
-  background: rgb(9, 8, 10);
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  font-family: "Georgia", serif;
+    padding: 0;
 }
 
-.nav-logo {
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #222;
+.gallery img {
+    width: 30%;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: opacity 0.25s ease;
 }
 
-.navbar-nav {
-  display: flex;
-  gap: 1.2rem;
+.gallery img:hover {
+    opacity: 0.5;
 }
-
-.nav-link {
-  text-decoration: none;
-  font-size: 0.97rem;
-  font-weight: 500;
-  color: #444;
-  padding-bottom: 4px;
-
-  border-bottom: 2px solid transparent;
-  transition: all 0.25s ease;
-}
-
-.nav-link:hover {
-  color: #000;
-  border-bottom-color: #000;
-}
-
-
-
-
-
 
 .elegant-footer {
-  margin-top: 4rem;
-  padding: 2.8rem 1.8rem;
+    margin-top: auto; 
+    padding: 2.8rem 1.8rem;
 
-  background: linear-gradient(135deg, #faf7f2, #f2eee8);
-  border-top: 1px solid rgba(0,0,0,0.12);
+    background: linear-gradient(135deg, #faf7f2, #f2eee8);
+    border-top: 1px solid rgba(0,0,0,0.12);
 
-  display: grid;
-  gap: 2.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-  font-family: "Georgia", "Times New Roman", serif;
+    font-family: "Georgia", "Times New Roman", serif;
 
-  box-shadow: 0 -6px 18px rgba(0,0,0,0.05);
-  border-radius: 14px 14px 0 0;
+    box-shadow: 0 -6px 18px rgba(0,0,0,0.05);
+    border-radius: 14px 14px 0 0;
 }
+
 .elegant-footer h3,
 .elegant-footer h4 {
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-  color: #2a2a2a;
-  letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    letter-spacing: 0.5px;
 }
 
 .elegant-footer p {
-  color: #555;
-  margin: 0.35rem 0;
-  line-height: 1.55;
-  font-size: 0.97rem;
+    color: #555;
+    margin: 0.35rem 0;
+    line-height: 1.55;
+    font-size: 0.97rem;
 }
 
 .elegant-footer a {
-  color: #444;
-  text-decoration: none;
-  border-bottom: 1px dotted rgba(0,0,0,0.25);
-  transition: 0.25s ease;
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(0,0,0,0.25);
+    transition: 0.25s ease;
 }
 
 .elegant-footer a:hover {
-  color: #111;
-  border-bottom-color: #111;
+    color: #111;
+    border-bottom-color: #111;
 }
 
 .elegant-footer div {
-  max-width: 300px;
+    max-width: 300px;
 }
 
+
+@media (max-width: 1024px) {
+    .gallery img {
+        width: 45%;
+    }
+
+    .site-nav {
+        width: 45%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .gallery img {
+        width: 90%;
+    }
+
+    .site-nav {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        justify-content: flex-end;
+    }
+
+    .the-main-navbar {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+}
