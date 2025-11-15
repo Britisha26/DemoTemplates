@@ -225,7 +225,7 @@ main {
     margin-left: 8.6rem;
 }
 
-pricing-button is-featured:hover, pricing-button is-featured:visited, pricing-button is-featured:link, pricing-button is-featured:active {
+.pricing-button is-featured:hover, .pricing-button is-featured:visited, .pricing-button is-featured:link, .pricing-button is-featured:active {
     text-decoration: none;
 }
 
