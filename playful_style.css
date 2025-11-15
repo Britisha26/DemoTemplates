@@ -20,12 +20,6 @@ section:not(:first-of-type) {
     margin: 100px 0;
 }
 
-#mainNavbar {
-    font-weight: 100;
-    font-size: 1.5rem;
-    position: sticky;
-    top:0;
-}
 
 #mainNavbar .nav-link {
     color: white;
@@ -62,8 +56,44 @@ section:not(:first-of-type) {
 }
 
 .the-main-navbar {
-    top:0;
+  background: linear-gradient(135deg, #fff7fa, #ffeef6, #fffaff);
+  border-bottom: 1px solid rgba(255, 180, 210, 0.35);
+  box-shadow: 0 2px 12px rgba(255, 150, 200, 0.25);
+  padding: 1.5rem 1rem;
+  font-family: "Georgia", serif;
+  border-radius: 0 0 18px 18px;  
+  z-index: 2000;
 }
+
+/* brand name */
+.the-main-navbar .navbar-brand {
+  color: #b4376c !important;  /* raspberry rose */
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* nav links */
+.the-main-navbar .nav-link {
+  color: #9b4d72 !important;   /* soft berry */
+  font-weight: 500;
+  padding-bottom: 4px;
+
+  border-bottom: 2px solid transparent;
+  transition: 0.25s ease;
+}
+
+/* hover effect: deep rose underline */
+.the-main-navbar .nav-link:hover {
+  color: #6a2c50 !important;
+  border-bottom-color: #6a2c50;
+}
+
+/* spacing between links (bootstrap-safe) */
+.the-main-navbar .navbar-nav .nav-item {
+  margin-left: 1.2rem;
+}
+
 
 .elegant-footer {
   margin-top: 4rem;
@@ -119,3 +149,15 @@ section:not(:first-of-type) {
 }
 
 html,body{overflow-x: hidden;} 
+
+#mainNavbar {
+    font-weight: 100;
+    font-size: 1.5rem;
+    position: sticky;
+    top:0;
+     z-index: 1500;
+}
+
+header, body {
+  overflow: visible !important;
+}
