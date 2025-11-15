@@ -117,3 +117,5 @@ section:not(:first-of-type) {
 .elegant-footer div {
   max-width: 320px;
 }
+
+html,body{overflow-x: hidden;} 
