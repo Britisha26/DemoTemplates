@@ -221,6 +221,23 @@ main {
   color: #cbd5e1;
 }
 
+.elegant-footer > div:first-child, .elegant-footer > div:nth-child(2) {
+    margin-left: 8.6rem;
+}
+
+@media (max-width: 768px) {
+    .elegant-footer > div:first-child,
+    .elegant-footer > div:nth-child(2) {
+        margin-left: 0 !important;
+    }
+}
+
+.elegant-footer > div:first-child {
+    white-space: normal !important;
+    max-width: 290px;
+}
+
+
 .the-main-navbar {
   background: rgba(35, 41, 47, 0.244);  
 
