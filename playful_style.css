@@ -23,6 +23,8 @@ section:not(:first-of-type) {
 #mainNavbar {
     font-weight: 100;
     font-size: 1.5rem;
+    position: sticky;
+    top:0;
 }
 
 #mainNavbar .nav-link {
@@ -59,3 +61,6 @@ section:not(:first-of-type) {
     }
 }
 
+.the-main-navbar {
+    top:0;
+}

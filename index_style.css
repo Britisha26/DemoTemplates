@@ -13,7 +13,7 @@ img:hover {
     opacity: 0.5;
 }
 
-nav {
+.site-nav {
     text-transform: uppercase;
     border-bottom: 2px solid #56565684;
     width: 30%;
@@ -21,4 +21,9 @@ nav {
     margin-bottom: 5%;
     padding: 1rem 0;
     font-size: 1.5em;
+}
+
+.the-main-navbar {
+    top:0;
+    width: 100%;
 }

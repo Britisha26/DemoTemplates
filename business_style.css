@@ -57,6 +57,10 @@ html {
 
 body {
     background-color: #3f9ef7;
+
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,4 +173,8 @@ li {
     .pricing-plan:last-child {
         border-right: none;
     }
+}
+
+.the-main-navbar {
+    top:0;
 }
