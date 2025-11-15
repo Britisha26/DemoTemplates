@@ -225,7 +225,7 @@ main {
     margin-left: 8.6rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 408px) {
     .elegant-footer > div:first-child,
     .elegant-footer > div:nth-child(2) {
         margin-left: 0 !important;
