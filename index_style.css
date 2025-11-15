@@ -28,7 +28,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    color: #222 !important;
+    color: #a7a7a7 !important;
 }
 
 .navbar-nav {
@@ -41,7 +41,7 @@ body {
     text-decoration: none;
     font-size: 0.97rem;
     font-weight: 500;
-    color: #444 !important;
+    color: #a7a7a7 !important;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
     transition: all 0.25s ease;
