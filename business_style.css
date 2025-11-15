@@ -178,3 +178,79 @@ li {
 .the-main-navbar {
     top:0;
 }
+
+
+.elegant-footer {
+  margin-top: 4rem;
+  padding: 2.5rem 1.8rem;
+
+  background: #f7f7f7;
+  border-top: 1px solid rgba(0,0,0,0.12);
+
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  font-family: "Georgia", serif;
+
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.04);
+}
+
+/* ———————————— */
+/* the shift you requested */
+/* ———————————— */
+
+.elegant-footer > div:first-child {
+  padding-left: 2rem;     /* move it right elegantly */
+}
+
+/* perfectly responsive: reset on small screens */
+@media (max-width: 600px) {
+  .elegant-footer > div:first-child {
+    padding-left: 0;
+  }
+}
+/* ———————————— */
+
+.elegant-footer h3,
+.elegant-footer h4 {
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: #252525;
+  letter-spacing: 0.3px;
+}
+
+.elegant-footer p {
+  color: #555;
+  margin: 0.35rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.elegant-footer a {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(0,0,0,0.22);
+  transition: 0.25s ease;
+}
+
+.elegant-footer a:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.elegant-footer div {
+  max-width: 320px;
+}
+
+.elegant-footer > div:first-child {
+  margin-left: 9rem;   /* desktop alignment */
+  padding-left: 0;
+}
+
+@media (max-width: 700px) {
+  .elegant-footer > div:first-child {
+    margin-left: 0;    /* reset on mobile */
+  }
+}
+

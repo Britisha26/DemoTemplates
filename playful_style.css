@@ -64,3 +64,56 @@ section:not(:first-of-type) {
 .the-main-navbar {
     top:0;
 }
+
+.elegant-footer {
+  margin-top: 4rem;
+  padding: 2.8rem 1.8rem;
+
+  background: linear-gradient(135deg, #fff7fa, #ffeef6, #fffaff);
+  border-top: 1px solid rgba(255, 180, 210, 0.35);
+
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  font-family: "Georgia", serif;
+
+  box-shadow: 0 -6px 18px rgba(255, 150, 200, 0.25);
+  border-radius: 20px 20px 0 0;
+}
+
+/* headings – soft, rosy, romantic */
+.elegant-footer h3,
+.elegant-footer h4 {
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: #b4376c;     /* roseberry pink */
+  letter-spacing: 0.4px;
+  font-size: 1.15rem;
+}
+
+/* paragraphs – gentle greyish pink */
+.elegant-footer p {
+  color: #704659;
+  margin: 0.35rem 0;
+  line-height: 1.55;
+  font-size: 0.96rem;
+}
+
+/* links – pastel berry hover */
+.elegant-footer a {
+  color: #9b4d72;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(140, 70, 100, 0.35);
+  transition: 0.25s ease;
+}
+
+.elegant-footer a:hover {
+  color: #6a2c50;
+  border-bottom-color: #6a2c50;
+}
+
+/* spacing for each block */
+.elegant-footer div {
+  max-width: 320px;
+}
