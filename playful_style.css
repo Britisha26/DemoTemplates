@@ -59,7 +59,7 @@ section:not(:first-of-type) {
   background: linear-gradient(135deg, #fff7fa, #ffeef6, #fffaff);
   border-bottom: 1px solid rgba(255, 180, 210, 0.35);
   box-shadow: 0 2px 12px rgba(255, 150, 200, 0.25);
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   font-family: "Georgia", serif;
   border-radius: 0 0 18px 18px;  
   z-index: 2000;
