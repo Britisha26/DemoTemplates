@@ -48,8 +48,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #000 !important;
-    border-bottom-color: #000;
+    color: #dcdada !important;
+    border-bottom-color: #b4b3b3;
 }
 
 .site-nav {
