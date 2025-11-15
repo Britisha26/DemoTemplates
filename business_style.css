@@ -225,6 +225,10 @@ main {
     margin-left: 8.6rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 408px) {
     .elegant-footer > div:first-child,
     .elegant-footer > div:nth-child(2) {
